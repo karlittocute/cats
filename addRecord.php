@@ -8,8 +8,8 @@
 	else 
 		echo "Проблемы с подключением ";
 	Cat::AddRecord();
-		
-include 'database.php';  
+		  
+header("Location: database.php");
 ?>
 
 

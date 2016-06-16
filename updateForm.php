@@ -3,6 +3,9 @@ include 'page1.php';
 	
 	if($_SESSION['rights']==1){
 	$id=$_POST['id'];
+	$name=$_POST['name'];
+	$breed=$_POST['breed'];
+	$year=$_POST['year'];
 	echo  <<<_END
 	
 	 </br></br></br>
@@ -11,15 +14,15 @@ include 'page1.php';
 		<div class="form-group">
 			<input  type='hidden'  name='id' value='$id' />
 			<label>Сat's name</label>
-			<input  name="name" class="form-control" >
+			<input  name="name" value='$name' class="form-control" >
 		</div>
 		<div class="form-group">
 			<label>Breed</label>
-			<input name="breed" class="form-control" >
+			<input name="breed" value='$breed' class="form-control" >
 		</div>
 		<div class="form-group">
 			<label>Year of birth</label>
-			<input  name="year" class="form-control" >
+			<input  name="year" value='$year' class="form-control" >
 		</div>
 
 

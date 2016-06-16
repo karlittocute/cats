@@ -8,7 +8,7 @@
 		else 
 			echo "Проблемы с подключением ";
 		Cat::deleteRecord();
-		include 'database.php';  
+		header("Location: database.php");  
 	}
 	else {
 		include 'page1.php';  

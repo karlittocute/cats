@@ -7,6 +7,6 @@
 	else 
 		echo "Проблемы с подключением ";
 	Cat::updateRecord();
-    include 'database.php';  
+    header("Location: database.php");
 ?>
 
